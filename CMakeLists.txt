@@ -9,3 +9,5 @@ target_link_libraries(${PROJECT_NAME} B)
 
 add_subdirectory(C)
 target_link_libraries(${PROJECT_NAME} C)
+
+add_subdirectory(D)
