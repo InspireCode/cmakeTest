@@ -1,6 +1,24 @@
 # 使用CMake构建具有菱形依赖关系的项目
+### 项目文件结构：
+```
+[project]
+-- A.cpp
+-- CMakeLists.txt
+-- [B]
+   -- B.h
+   -- B.cpp
+   -- CMakeLists.txt
+-- [C]
+   -- C.h
+   -- C.cpp
+   -- CMakeLists.txt
+-- [D]
+   -- D.h
+   -- D.cpp
+   -- CMakeLists.txt
+```
 
-### 1. 文件(项目)依赖关系如下：
+### 1. 项目依赖关系如下：
 ```
 A<---B<---D
  ↑---C<---┘
