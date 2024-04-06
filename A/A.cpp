@@ -1,6 +1,6 @@
 #include <iostream>
-#include "B.h"
-#include "C.h"
+#include "B/B.h"
+#include "C/C.h"
 
 
 int main(int, char**){
